@@ -17,10 +17,9 @@ class Song
     binding.pry
     filename = name.split(/-/).map(&:strip)
     filename.to_s 
-    filename.each do |file| @@filename << file end 
-    song_name = @@filename[1]
+    song_name = filename[1]
     song_name = self.new(song_name)
-    artist_name = @@filename[0]
+    artist_name = filename[0]
     artist_name = Artist.new(artist_name)
     renew_array(@@filename)
   end
