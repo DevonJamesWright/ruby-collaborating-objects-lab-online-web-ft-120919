@@ -20,12 +20,7 @@ class Song
     song_name = self.new(song_name)
     artist_name = filename[0]
     artist_name = Artist.new(artist_name)
-    renew_array(@@filename)
+    
   end
-  def self.renew_array(array)
-    counter = 0 
-    if array.size > 3 
-      3.times array.shift
-    end
-  end 
+  
 end 
