@@ -6,8 +6,8 @@ class MP3Importer#utility class
     
   end
   
-  def files
-    files = Dir.entries
+  def files(mp3s)
+    files = Dir.entries(mp3s)
   end
   
 end
