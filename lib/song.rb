@@ -14,7 +14,6 @@ class Song
 
   end 
   def self.new_by_filename(name)
-    binding.pry
     filename = name.split(/-/).map(&:strip)
     song_name = filename[1]
     song = self.new(song_name)
