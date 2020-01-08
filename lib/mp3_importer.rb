@@ -10,5 +10,8 @@ class MP3Importer#utility class
     Dir["#{path}/*.mp3"].each do |file| @files << file.sub("#{path}/","")end 
     @files 
   end
-  
+  def import 
+    binding.pry
+    Song.new_by_filename
+  end 
 end
