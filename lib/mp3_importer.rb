@@ -6,7 +6,7 @@ class MP3Importer#utility class
     
   end
   
-  def files(dir)
+  def files
     files = Dir.foreach(dir) \
            .map { |x| File.expand_path("#{dir}/#{x}") } \
            .select { |x| File.file?(x) }
