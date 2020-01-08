@@ -7,7 +7,7 @@ class MP3Importer#utility class
   end
   
   def files
-    @files << Dir["#{path}/to/search/mp3s"]
+    @files << Dir["#{path}/*.mp3"]
   end
   
 end
