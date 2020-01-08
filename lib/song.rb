@@ -13,7 +13,7 @@ class Song
     @@all 
 
   end 
-  def self.new_by_filename (name)
+  def self.new_by_filename
     filename = name.split(/-/).map(&:strip)
     filename.to_s 
     filename.each do |file| @@filename << file end 
