@@ -17,10 +17,10 @@ class Song
     binding.pry
     filename = name.split(/-/).map(&:strip)
     song_name = filename[1]
-    song_name = self.new(song_name)
+    song = self.new(song_name)
     artist_name = filename[0]
-    artist_name = Artist.find_or_create(artist_name)
-    
+    artist = Artist.find_or_create_by_name(artist_name)
+    song.artist
   end
   
 end 
