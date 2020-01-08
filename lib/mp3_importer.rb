@@ -7,7 +7,7 @@ class MP3Importer#utility class
   end
   
   def files
-    Dir["#{path}/*.mp3"].each do |file| @files << file
+    Dir["#{path}/*.mp3"].each do |file| @files << file.sub /#{path}/
   end
   
 end
